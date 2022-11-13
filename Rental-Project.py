@@ -25,17 +25,16 @@
 #         self.total_monthly_income = 0
 #         self.total_monthly_expenses = 0
 #         self.total_monthly_cash_flow = 0
-#         self.total_annual_cash_flow = 0
+#         self.total_yearly_cash_flow = 0
 #         self.total_investment = 0
 #         self.return_on_investment = 0
     
-
 #     def income(self):
 #         self.rental_income = int(input('What is your rental income?'))
 #         if self.rental_income >= 0:
 #             print(f"Your monthly rental income is {self.rental_income}")
 #         else:
-#             print("Invalid input, please try again.")
+#             print("Invalid input, try again at a different time.")
 #         self.total_monthly_income = self.rental_income
 #         print(f"The total monthly income is {self.total_monthly_income}")
 #     def expenses(self):
@@ -43,36 +42,35 @@
 #         if self.electric >= 0:
 #             print(f"Your monthly electric is {self.electric}")
 #         else:
-#             print("Invalid input, please try again.")
+#             print("Invalid input, try again at a different time.")
 #         self.total_monthly_expenses = self.electric
 #         print(f"The total monthly expense is {self.total_monthly_expenses}")
 #     def cashflow(self):
 #         self.total_monthly_cash_flow = self.total_monthly_income - self.total_monthly_expenses
 #         print(f"The total monthly cash flow is {self.total_monthly_cash_flow}")
-
-#         self.total_annual_cash_flow = self.total_monthly_cash_flow * 12
-#         print(f"The total annual cash flow is {self.total_annual_cash_flow}")
+#         self.total_yearly_cash_flow = self.total_monthly_cash_flow * 12
+#         print(f"The total yearly cash flow is {self.total_yearly_cash_flow}")
 #     def investment(self):
-#         self.down_payment = int(input('How much is your down payment?'))
-#         if self.down_payment >= 0:  
-#              print(f"Your down payment is {self.down_payment}")
+#         self.payment = int(input('How much is your payment?'))
+#         if self.payment >= 0:  
+#              print(f"Your payment is {self.payment}")
 #         else:
-#             print("Invalid input, please try again.")
-#         self.total_investment = self.down_payment
+#             print("Invalid input, try again at a different time.")
+#         self.total_investment = self.payment
 #         print(f"Your total investment is {self.total_investment}")
 
-#         self.return_on_investment = self.total_annual_cash_flow / self.total_investment
+#         self.return_on_investment = self.total_yearly_cash_flow / self.total_investment
 #         print(f"The ROI is {self.return_on_investment} %")
 #     def UserInput(self):
 #         while True:
-#             response = (input("Would you like to calculate your ROI? yes, no")).lower()
+#             response = (input("Calculate your ROI? yes, no")).lower()
 #             if response == "yes":
 #                 self.income()
 #                 self.expenses()
 #                 self.cashflow()
 #                 self.investment()
 #             elif response == "no":
-#                 print("Goodbye.")
+#                 print("Have a great time!")
 #                 break
 #             else:
 #                 print("Invalid input, please try again.")
@@ -87,3 +85,5 @@ def ROI(Total, Payments, Expenses):
     print(ROI)
 
 ROI(Total, Payments, Expenses)
+
+#^^^^Here is the Return on Investment(ROI)
